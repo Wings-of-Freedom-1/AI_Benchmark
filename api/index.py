@@ -78,3 +78,7 @@ def app(environ, start_response):
     # Default 404
     start_response('404 Not Found', [('Content-Type', 'text/plain')])
     return [b'Not Found']
+
+from fastapi import FastAPI
+
+app = FastAPI()
